@@ -4,58 +4,79 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <title>Alex Style's Portfolio Website</title>
+        <script src="script.js"></script>
+        <title>My Portfolio Website</title>
     </head>
     
     <body>
-        <header>
+        <header class="grid-header">
             <h1>Welcome to my portfolio website!</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section id="about">
-            <h2>Alex Styles About Me</h2>
-            <p>placeholder text</p>
-        </section>
+        <main class="grid-main">
+            <section id="about" class="section-wrapper">
+                <h2>About Me</h2>
+                <p>placeholder text</p>
+            </section>
+    
+            <section id="projects" class="section-wrapper">
+                <h2>Projects</h2>
 
-        <section id="projects">
-            <h2>Projects</h2>
+                <div class="projects-grid">
 
-            <article>
-                <h3>Project Name Placeholder</h3>
-                <p>Project description</p>
-                <figure>
-                    This is where images of a project would go.
-                </figure>
-            </article>
-        </section>
-        
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>placeholder text</li>
-            </ul>
-        </section>
+                    <div class="project-card" onclick="toggleDetails(this)">
+                        <img src="images/project1-thumb.jpg" alt="Project 1 thumbnail" loading="lazy">
+                        <h3>Project Name 1</h3>
+                        <div class="project-details">
+                            <p>This is the detailed description of Project 1. Explain tech stack, features, and links.</p>
+                        </div>
+                    </div>
 
-        <section id="contact">
-            <h2>Contact Form</h2>
-            <form>
-                <label for="fullname">Full Name:</label><br>
-                <input type="text" id="fullname" name="fullname"><br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email"><br>
+                    <div class="project-card" onclick="toggleDetails(this)">
+                        <img src="images/project2-thumb.jpg" alt="Project 2 thumbnail" loading="lazy">
+                        <h3>Project Name 2</h3>
+                        <div class="project-details">
+                            <p>Details about Project 2. Showcase challenges and solutions, maybe a live demo.</p>
+                        </div>
+                    </div>
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+                    <div class="project-card" onclick="toggleDetails(this)">
+                        <img src="images/project3-thumb.jpg" alt="Project 3 thumbnail" loading="lazy">
+                        <h3>Project Name 3</h3>
+                        <div class="project-details">
+                            <p>Describe Project 3’s unique contributions, lessons learned, and future work.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+    
+            <section id="contact" class="section-wrapper">
+                <h2>Contact Form</h2>
+                <form>
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="grid-footer">
+            <p>&#169 2025 My Portfolio Site. All rights reserved.</p>
+        </footer>
 
     </body>
 </html>
