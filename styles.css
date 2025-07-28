@@ -109,14 +109,13 @@ h3 {
 
 p {
     max-width: 60ch;
-    margin-inline: auto; /* maybe change this later */
+    margin-inline: auto; 
 }
   
 /* ==== FORMS ==== */
 form {
     display: flex;
     flex-direction: column;
-    /* gap: 1rem; */
     max-width: 500px;
     margin: auto;
     padding: 1rem;
@@ -142,22 +141,23 @@ textarea {
 textarea {
     resize: none;
 }
-  
-input[type="submit"] {
+
+.button {
     background-color: var(--primary);
     color: white;
     border: none;
-    padding: 0.75rem 1rem;
-    margin-top: 1rem;
-    cursor: pointer;
+    padding: 0.75rem 1.25rem;
     font-weight: 600;
+    border-radius: 4px;
+    font-family: var(--font-main);
     transition: background-color 0.3s ease;
-    min-height: 44px;
+  }
+  
+.button:hover {
+    background-color: var(--secondary);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
   
-input[type="submit"]:hover {
-    background-color: var(--secondary);
-}
   
 /* ==== PROJECT SECTIONS ==== */
 .projects-grid {
@@ -189,6 +189,7 @@ input[type="submit"]:hover {
     border-radius: 4px;
     object-fit: cover;
     max-height: 200px;
+    margin-bottom: 1rem;
 }
   
 .project-card h3 {
@@ -218,30 +219,8 @@ input[type="submit"]:hover {
     width: 90%;
 }
 
-.open-modal {
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    padding: 0.75rem 1.25rem;
-    margin-top: 1rem;
-    font-family: var(--font-main);
-    font-weight: 600;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
-}
-  
-.open-modal:hover {
-    background-color: var(--secondary);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}  
-
 .close-button {
-    min-height: 50px;
-    min-width: 50px;
-    font-size: 30px;
+    min-height: 44px;
 }
   
 /* ==== RESPONSIVE === */
@@ -286,6 +265,10 @@ input[type="submit"]:hover {
     input[type="submit"] {
         font-size: 1rem;
         padding: 0.75rem 1rem;
+    }
+
+    .modal-content {
+        padding: 1rem;
     }
 }
   

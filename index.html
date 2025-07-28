@@ -13,10 +13,9 @@
             <h1>Welcome to my portfolio website!</h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" title="Read my about me">About Me</a></li>
+                    <li><a href="#projects" title="View all projects">Projects</a></li>
+                    <li><a href="#contact" title="Get in touch with me">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -35,11 +34,11 @@
                     <div class="project-card">
                         <h3>Project Name 1</h3>
                         <img src="images/project1-thumb.jpg" alt="Project 1 thumbnail" loading="lazy"><br>
-                        <button class="open-modal" onclick="openModal('project1')">View Details</button>
+                        <button class="button open-modal" onclick="openModal('project1')">View Details</button>
                     </div>
                     <div id="project1" class="modal">
                         <div class="modal-content">
-                            <span class="close-button" onclick="closeModal(this)">&times;</span>
+                            <button class="button close-button" onclick="closeModal(this)">&times;</button>
                             <h2>Project Name 1</h2>
                             <p>This is the detailed description of Project 1. Explain tech stack, features, and links.</p>
                         </div>
@@ -48,11 +47,11 @@
                     <div class="project-card">
                         <h3>Project Name 2</h3>
                         <img src="images/project2-thumb.jpg" alt="Project 2 thumbnail" loading="lazy"><br>
-                        <button class="open-modal" onclick="openModal('project2')">View Details</button>
+                        <button class="button open-modal" onclick="openModal('project2')">View Details</button>
                     </div>
                     <div id="project2" class="modal">
                         <div class="modal-content">
-                            <span class="close-button" onclick="closeModal(this)">&times;</span>
+                            <button class="button close-button" onclick="closeModal(this)">&times;</button>
                             <h2>Project Name 2</h2>
                             <p>Details about Project 2. Showcase challenges and solutions, maybe a live demo.</p>
                         </div>
@@ -61,11 +60,11 @@
                     <div class="project-card">
                         <h3>Project Name 3</h3>
                         <img src="images/project3-thumb.jpg" alt="Project 3 thumbnail" loading="lazy"><br>
-                        <button class="open-modal" onclick="openModal('project3')">View Details</button>
+                        <button class="button open-modal" onclick="openModal('project3')">View Details</button>
                     </div>
                     <div id="project3" class="modal">
                         <div class="modal-content">
-                            <span class="close-button" onclick="closeModal(this)">&times;</span>
+                            <button class="button close-button" onclick="closeModal(this)">&times;</button>
                             <h2>Project Name 3</h2>
                             <p>Describe Project 3’s unique contributions, lessons learned, and future work.</p>
                         </div>
@@ -83,7 +82,7 @@
                     <input type="text" id="email" name="email"><br>
                     <label for="message">Message</label><br>
                     <textarea id="message" name="message" rows="4" cols="50" placeholder="Leave a message or comment." required></textarea><br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" class="button" value="Submit">
                 </form>
             </section>
 
