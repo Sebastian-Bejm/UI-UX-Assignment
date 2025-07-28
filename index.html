@@ -24,7 +24,7 @@
         <main class="grid-main">
             <section id="about" class="section-wrapper">
                 <h2>About Me</h2>
-                <p>placeholder text</p>
+                <p>About me placeholder description. Brief introduction and description of personal and professional background, such as education and experience.</p>
             </section>
     
             <section id="projects" class="section-wrapper">
@@ -32,26 +32,41 @@
 
                 <div class="projects-grid">
 
-                    <div class="project-card" onclick="toggleDetails(this)">
+                    <div class="project-card">
                         <h3>Project Name 1</h3>
-                        <img src="images/project1-thumb.jpg" alt="Project 1 thumbnail" loading="lazy">
-                        <div class="project-details">
+                        <img src="images/project1-thumb.jpg" alt="Project 1 thumbnail" loading="lazy"><br>
+                        <button class="open-modal" onclick="openModal('project1')">View Details</button>
+                    </div>
+                    <div id="project1" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button" onclick="closeModal(this)">&times;</span>
+                            <h2>Project Name 1</h2>
                             <p>This is the detailed description of Project 1. Explain tech stack, features, and links.</p>
                         </div>
                     </div>
 
-                    <div class="project-card" onclick="toggleDetails(this)">
+                    <div class="project-card">
                         <h3>Project Name 2</h3>
-                        <img src="images/project2-thumb.jpg" alt="Project 2 thumbnail" loading="lazy">
-                        <div class="project-details">
+                        <img src="images/project2-thumb.jpg" alt="Project 2 thumbnail" loading="lazy"><br>
+                        <button class="open-modal" onclick="openModal('project2')">View Details</button>
+                    </div>
+                    <div id="project2" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button" onclick="closeModal(this)">&times;</span>
+                            <h2>Project Name 2</h2>
                             <p>Details about Project 2. Showcase challenges and solutions, maybe a live demo.</p>
                         </div>
                     </div>
 
-                    <div class="project-card" onclick="toggleDetails(this)">
+                    <div class="project-card">
                         <h3>Project Name 3</h3>
-                        <img src="images/project3-thumb.jpg" alt="Project 3 thumbnail" loading="lazy">
-                        <div class="project-details">
+                        <img src="images/project3-thumb.jpg" alt="Project 3 thumbnail" loading="lazy"><br>
+                        <button class="open-modal" onclick="openModal('project3')">View Details</button>
+                    </div>
+                    <div id="project3" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button" onclick="closeModal(this)">&times;</span>
+                            <h2>Project Name 3</h2>
                             <p>Describe Project 3’s unique contributions, lessons learned, and future work.</p>
                         </div>
                     </div>
