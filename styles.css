@@ -218,6 +218,26 @@ input[type="submit"]:hover {
     width: 90%;
 }
 
+.open-modal {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+  
+.open-modal:hover {
+    background-color: var(--secondary);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}  
+
 .close-button {
     min-height: 50px;
     min-width: 50px;
